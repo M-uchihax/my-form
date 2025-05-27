@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2><center>Students Registration Form</center></h2>
+    <form action="https://formsubmit.co/yusufadamsadiq7@gmail.com" method="post">
+        <fieldset>
+            <legend><strong>Personal Infomation</strong></legend>
+            <label>Full Name:
+                <input type="text" name="Full Name" placeholder="Enter your full name" required>
+            </label><br>
+            <label> Email Address:
+                <input type="email" name="Email Address" placeholder="example@gmail.com" required>
+            </label><br>
+            <label> Phone Number:
+                <input type="text" name="Phone Number" required>
+            </label><br>
+            <label>Gender:
+                <input type="radio" name="Gender" value="Male" required>Male
+            </label>
+            <label>
+                <input type="radio" name="Gender" value="Female" required>Female
+            </label>
+        </fieldset>
+
+        <fieldset>
+            <legend><strong>Course Details</strong></legend>
+            Course to Enroll:<select name="Course To Enroll" required>
+                <option value="" disabled selected>---Choose Course---</option>
+                <option value="Web Development">Web Development</option>
+                <option value="Graphic Design">Graphic Design</option>
+                <option value="Python Programming">Python Programming</option>
+                <option value="Cybersecurity Basics">Cybersecurity Basics</option>
+                <option value="Mobile App Development" >Mobile App Development</option>
+            </select><br>
+            Skills:<label>
+            <input type="checkbox" name="Skills" value="HTML">HTML
+            </label>
+            <label>
+            <input type="checkbox" name="Skills" value="CSS">CSS
+            </label>
+            <label>
+            <input type="checkbox" name="Skills" value="Java Script">Java Script
+            </label>
+            <label>
+            <input type="checkbox" name="Skills" value="Python">Python
+            </label>
+        </fieldset>
+        <strong>Feedbacks/Comments</strong><br>
+        <textarea name="Feedbacks" cols="40" rows="5" ></textarea>
+        <input type="hidden" name="_captcha" value="false">
+        <input type="hidden" name="_next" value="index.html">
+        <input type="hidden" name="Source Page:" value="main page">
+        <button type="Submit"><strong>Register</strong></button>
+    </form>
+</body>
+</html>
